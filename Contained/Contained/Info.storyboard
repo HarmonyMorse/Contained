@@ -18,22 +18,90 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="u9U-NX-Om5"/>
+                    <navigationItem key="navigationItem" id="u9U-NX-Om5">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="bsx-b3-wcF">
+                            <connections>
+                                <segue destination="trN-6c-lJ0" kind="show" id="OWv-dK-76Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="848" y="94"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Yf0-RE-so1">
+            <objects>
+                <viewController id="trN-6c-lJ0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4JI-nh-uhs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A65-xK-kWR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="fzZ-6a-cIC"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dnF-2S-Kgp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rd8-aP-0CS">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="sAN-F7-c8C">
+                            <connections>
+                                <segue destination="tER-Sh-cEg" kind="show" id="TLd-xl-jfa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pzh-a5-uAX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="94"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YG7-nu-3lJ">
+            <objects>
+                <viewController id="tER-Sh-cEg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j04-Xh-oio">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ywx-Sw-E8d">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="yLV-LB-fIo"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hd0-t8-ygJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FXr-LW-Wgf">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="zqY-pz-vjZ"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hg-Fh-0zg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2554" y="94"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="t4g-n2-quK">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eyx-GS-cCf" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="InfoNavigation" automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="eyx-GS-cCf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y0y-Sz-Euz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9mQ-pf-qzo">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="dIl-mN-u9t"/>
                     </connections>
