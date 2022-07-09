@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="InfoViewController" customModule="Contained" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,7 +19,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="u9U-NX-Om5">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="bsx-b3-wcF">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="bsx-b3-wcF">
                             <connections>
                                 <segue destination="trN-6c-lJ0" kind="show" id="OWv-dK-76Z"/>
                             </connections>
@@ -50,7 +50,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rd8-aP-0CS">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="sAN-F7-c8C">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="sAN-F7-c8C">
                             <connections>
                                 <segue destination="tER-Sh-cEg" kind="show" id="TLd-xl-jfa"/>
                             </connections>
@@ -81,7 +81,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="FXr-LW-Wgf">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="zqY-pz-vjZ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="zqY-pz-vjZ"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hg-Fh-0zg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
