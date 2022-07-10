@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453AC9F1287A5B650031F36F /* CustomScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453AC9F0287A5B650031F36F /* CustomScene.swift */; };
 		453E8F1328788F470019F753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E8F1228788F470019F753 /* AppDelegate.swift */; };
 		453E8F1528788F470019F753 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E8F1428788F470019F753 /* SceneDelegate.swift */; };
 		453E8F1A28788F470019F753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453E8F1828788F470019F753 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453AC9F0287A5B650031F36F /* CustomScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScene.swift; sourceTree = "<group>"; };
 		453E8F0F28788F460019F753 /* Contained.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contained.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		453E8F1228788F470019F753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		453E8F1428788F470019F753 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				453E8F1828788F470019F753 /* Main.storyboard */,
 				453E8F282878918C0019F753 /* Info.storyboard */,
 				453E8F2C287A2C180019F753 /* GameViewController.swift */,
+				453AC9F0287A5B650031F36F /* CustomScene.swift */,
 				453E8F2E287A2C2C0019F753 /* InfoViewController.swift */,
 				453E8F30287A2C3E0019F753 /* SettingsViewController.swift */,
 				453E8F1B28788F480019F753 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 				453E8F31287A2C3E0019F753 /* SettingsViewController.swift in Sources */,
 				453E8F1328788F470019F753 /* AppDelegate.swift in Sources */,
 				453E8F2B287891DE0019F753 /* Settings.swift in Sources */,
+				453AC9F1287A5B650031F36F /* CustomScene.swift in Sources */,
 				453E8F2F287A2C2C0019F753 /* InfoViewController.swift in Sources */,
 				453E8F1528788F470019F753 /* SceneDelegate.swift in Sources */,
 			);

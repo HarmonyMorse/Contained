@@ -93,15 +93,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <skView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pvh-1J-O9J">
+                            <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvh-1J-O9J">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </skView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QiO-4W-xnO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pvh-1J-O9J" firstAttribute="bottom" secondItem="QiO-4W-xnO" secondAttribute="bottom" id="C1h-yD-LBG"/>
+                            <constraint firstItem="pvh-1J-O9J" firstAttribute="trailing" secondItem="QiO-4W-xnO" secondAttribute="trailing" id="D1l-ZT-mtI"/>
+                            <constraint firstItem="pvh-1J-O9J" firstAttribute="top" secondItem="QiO-4W-xnO" secondAttribute="top" id="K7M-Nc-DEn"/>
+                            <constraint firstItem="pvh-1J-O9J" firstAttribute="leading" secondItem="QiO-4W-xnO" secondAttribute="leading" id="PZ7-mV-qh4"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Play" selectedImage="game_controller" id="F9X-q2-tuh"/>
+                    <connections>
+                        <outlet property="skview" destination="pvh-1J-O9J" id="KXj-kD-3oK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pte-0j-Iq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
