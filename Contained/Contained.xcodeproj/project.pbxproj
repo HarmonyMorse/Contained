@@ -73,9 +73,9 @@
 				453E8F2C287A2C180019F753 /* GameViewController.swift */,
 				453E8F2E287A2C2C0019F753 /* InfoViewController.swift */,
 				453E8F30287A2C3E0019F753 /* SettingsViewController.swift */,
-				453E8F2A287891DE0019F753 /* Settings.swift */,
 				453E8F1B28788F480019F753 /* Assets.xcassets */,
 				453E8F1D28788F480019F753 /* LaunchScreen.storyboard */,
+				453E8F2A287891DE0019F753 /* Settings.swift */,
 				453E8F2028788F480019F753 /* Info.plist */,
 				453E8F262878915E0019F753 /* SKSpriteNode+Utility.swift */,
 			);
