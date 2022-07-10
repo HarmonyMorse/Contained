@@ -29,19 +29,25 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="i8L-MF-sei">
                                 <rect key="frame" x="182.5" y="381.5" width="49" height="133"/>
                                 <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-eA-dzR">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-eA-dzR">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="toggleRoll:" destination="3fw-h4-Rca" eventType="valueChanged" id="7kf-W2-NcQ"/>
+                                        </connections>
                                     </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LcZ-pX-L6O">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LcZ-pX-L6O">
                                         <rect key="frame" x="0.0" y="51" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="toggleZoom:" destination="3fw-h4-Rca" eventType="valueChanged" id="rf5-oG-qvj"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVD-sp-JBG">
                                         <rect key="frame" x="0.0" y="102" width="51" height="31"/>
                                     </switch>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="at7-2p-xUb">
-                                <rect key="frame" x="76" y="388" width="88" height="121.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="at7-2p-xUb">
+                                <rect key="frame" x="74.5" y="387.5" width="88" height="121.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKz-FP-WTO">
                                         <rect key="frame" x="60" y="0.0" width="28" height="20.5"/>
@@ -67,8 +73,10 @@
                         <viewLayoutGuide key="safeArea" id="3d9-eq-AOw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="i8L-MF-sei" firstAttribute="leading" secondItem="at7-2p-xUb" secondAttribute="trailing" constant="20" id="0uA-LR-Vmy"/>
                             <constraint firstItem="i8L-MF-sei" firstAttribute="centerX" secondItem="WjR-wJ-TcK" secondAttribute="centerX" id="E93-Av-fmU"/>
                             <constraint firstItem="i8L-MF-sei" firstAttribute="centerY" secondItem="WjR-wJ-TcK" secondAttribute="centerY" id="Gca-NY-CN1"/>
+                            <constraint firstItem="at7-2p-xUb" firstAttribute="centerY" secondItem="WjR-wJ-TcK" secondAttribute="centerY" id="NdE-96-krc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" selectedImage="settings" id="FrW-KX-aUs"/>
