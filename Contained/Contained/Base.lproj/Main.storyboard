@@ -12,7 +12,7 @@
         <scene sceneID="EaZ-eg-Jdz">
             <objects>
                 <viewControllerPlaceholder storyboardName="Info" referencedIdentifier="InfoNavigation" id="lXW-r9-iL2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="N6o-PL-lRd"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="info.circle.fill" catalog="system" selectedImage="info.circle.fill" id="N6o-PL-lRd"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dCG-rN-h1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,7 +27,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="i8L-MF-sei">
-                                <rect key="frame" x="182.5" y="381.5" width="49" height="133"/>
+                                <rect key="frame" x="182.5" y="407" width="49" height="82"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-eA-dzR">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -41,28 +41,19 @@
                                             <action selector="toggleZoom:" destination="3fw-h4-Rca" eventType="valueChanged" id="rf5-oG-qvj"/>
                                         </connections>
                                     </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVD-sp-JBG">
-                                        <rect key="frame" x="0.0" y="102" width="51" height="31"/>
-                                    </switch>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="at7-2p-xUb">
-                                <rect key="frame" x="74.5" y="387.5" width="88" height="121.5"/>
+                                <rect key="frame" x="118" y="412.5" width="44.5" height="71"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKz-FP-WTO">
-                                        <rect key="frame" x="60" y="0.0" width="28" height="20.5"/>
+                                        <rect key="frame" x="16.5" y="0.0" width="28" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wak-u2-I9o">
-                                        <rect key="frame" x="43.5" y="50.5" width="44.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy crab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75e-U0-5Ux">
-                                        <rect key="frame" x="0.0" y="101" width="88" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="50.5" width="44.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -79,7 +70,7 @@
                             <constraint firstItem="at7-2p-xUb" firstAttribute="centerY" secondItem="WjR-wJ-TcK" secondAttribute="centerY" id="NdE-96-krc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" selectedImage="settings" id="FrW-KX-aUs"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="FrW-KX-aUs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tjr-sq-SV4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +97,7 @@
                             <constraint firstItem="pvh-1J-O9J" firstAttribute="leading" secondItem="QiO-4W-xnO" secondAttribute="leading" id="PZ7-mV-qh4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Play" selectedImage="game_controller" id="F9X-q2-tuh"/>
+                    <tabBarItem key="tabBarItem" title="Play" image="game_controller" selectedImage="game_controller" id="F9X-q2-tuh"/>
                     <connections>
                         <outlet property="skview" destination="pvh-1J-O9J" id="KXj-kD-3oK"/>
                     </connections>
@@ -137,6 +128,7 @@
     </scenes>
     <resources>
         <image name="game_controller" width="30" height="30"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="settings" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
